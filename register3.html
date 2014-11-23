@@ -74,7 +74,6 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
 <!-- End Visual Website Optimizer Asynchronous Code -->
 
 
-
 </head>
 
 <body>
@@ -148,7 +147,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
 
                         <!-- \ START CONTENT SECTION / -->
                         <div class="contentBox">
-                         <p  class="ValidationErrors" style="font-size:12px;">* Mandatory fields</p>
+
 
 
                                         <!-- \ START ROW1 - TITLE / -->
@@ -184,7 +183,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                             <!-- \ COL1 / -->
                                             <div class="col1 marginTop_20px">
 
-                                             <sup class="MandatorySign">&ast;</sup>Name:
+                                            Name:
 
                                             </div>
                                             <!-- \ END COL1 / -->
@@ -194,12 +193,12 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                             <div class="col2">
 
                                                 <div class="gnriCol marginRight_15px">
-                                                    <span class="marginBottom_4px"> <sup class="MandatorySign">&ast;</sup>First Name</span>
+                                                    <span class="marginBottom_4px">First Name</span>
                                                     <input type="text" name="ValidFName" id="ValidFName" class="twoAdj" />
                                                 </div>
 
                                                 <div class="gnriCol">
-                                                    <span class="marginBottom_4px"> <sup class="MandatorySign">&ast;</sup>Last Name</span>
+                                                    <span class="marginBottom_4px">Last Name</span>
                                                     <input type="text" name="ValidLName" id="ValidLName" class="twoAdj" />
                                                 </div>
 
@@ -216,7 +215,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                             <!-- \ COL1 / -->
                                             <div class="col1">
 
-                                             <sup class="MandatorySign">&ast;</sup>Gender :
+                                            Gender:
 
                                             </div>
                                             <!-- \ END COL1 / -->
@@ -244,7 +243,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                             <!-- \ COL1 / -->
                                             <div class="col1">
 
-                                             <sup class="MandatorySign">&ast;</sup>DOB:
+                                            DOB:
 
                                             </div>
                                             <!-- \ END COL1 / -->
@@ -351,7 +350,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                             <!-- \ COL1 / -->
                                             <div class="col1">
 
-                                             <sup class="MandatorySign">&ast;</sup>State:
+                                            State:
 
                                             </div>
                                             <!-- \ END COL1 / -->
@@ -401,7 +400,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                             <!-- \ COL1 / -->
                                             <div class="col1">
 
-                                             <sup class="MandatorySign">&ast;</sup>Contact# 1:
+                                            Contact# 1:
 
                                             </div>
                                             <!-- \ END COL1 / -->
@@ -444,7 +443,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                             <!-- \ COL1 / -->
                                             <div class="col1">
 
-                                             <sup class="MandatorySign">&ast;</sup>Email:
+                                            Email:
 
                                             </div>
                                             <!-- \ END COL1 / -->
@@ -472,7 +471,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                             <!-- \ COL2 / -->
                                             <div class="col2 floatRight">
 
-                                               <input type="submit"  value="Submit" id="FormSubmit1"   />
+                                               <input type="submit"  value="Submit" id="FormSubmit1"  class="disabled"  />
 
                                             </div>
                                             <!-- \ END COL2 / -->
@@ -527,7 +526,6 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
 	
 	window._vis_opt_queue = window._vis_opt_queue || [], _vis_counter = 0, dimensionMap = {"1": "dimension1","2": "dimension2","3": "dimension3","4": "dimension4","5": "dimension5"}; _vis_opt_queue.push(function () { try { if (!_vis_counter) { var _vis_data = {}, _vis_combination, _vis_id, _vis_l = 0; for (; _vis_l < _vwo_exp_ids.length; _vis_l++) { _vis_id = _vwo_exp_ids[_vis_l]; if (_vwo_exp[_vis_id].ready) { _vis_combination = _vis_opt_readCookie('_vis_opt_exp_' + _vis_id + '_combi'); if (typeof (_vwo_exp[_vis_id].combination_chosen) != "undefined") _vis_combination = _vwo_exp[_vis_id].combination_chosen; if (typeof (_vwo_exp[_vis_id].comb_n[_vis_combination]) != "undefined") { _vis_data[_vis_id] = "TestId: " + _vis_id + ",VarName: " + _vwo_exp[_vis_id].comb_n[_vis_combination]; _vis_counter++; } } } if (_vis_counter) { vwo_$(function () { for (var testid in _vis_data) { dimensionMap[testid] && window.ga("set", dimensionMap[testid], _vis_data[testid]); } window.ga('send', 'event', 'VWO', 'Custom', {'nonInteraction': 1}); }); } } } catch (err) {}; }); 
 	</script>
-
 
 </body>
 </html>
